@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookies</title>
+</head>
+<body>
+    <form onsubmit="return false"></form>
+    <label>cookie name</label>
+    <input type="text" id="cookie_name" required><br><br>
+    <label>cookie value</label>
+    <input type="text" id="cookie_value" required><br>
+    <button onclick="submitform()">Submit</button>
+    <script>
+        const cookiename = document.getElementById("cookie_name");
+        const cookievalue = document.getElementById("cookie_value");
+
+        function submitform(){
+            var cookienameinput = cookiename.value;
+            var cookievalueinput = cookievalue.value;
+
+            //set cookies syntax
+            document.cookie = cookienameinput + "=" + cookievalueinput + ";";
+
+        }
+    </script>
+</body>
+</html>

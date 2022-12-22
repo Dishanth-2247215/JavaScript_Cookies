@@ -4,13 +4,13 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 35px;
+    font-size: 25px;
     background-color: rgb(233, 202, 149);
 }
 
 h1 {
     font-family: 'Franklin Gothic Medium';
-    padding: 20px;
+    padding: 15px;
     border-color: darkgray;
     text-align: center;
 }
